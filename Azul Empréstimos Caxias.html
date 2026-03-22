@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/joaoa/OneDrive/Documentos/sitejoao.html#simulacao -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azul Empréstimos Caxias</title>
+  <style>
+    body {margin:0;font-family:Arial;background:#f4f6f9;}
+    header{background:#0a3d62;color:#fff;padding:20px;text-align:center}
+    nav{background:#1e5f8a;padding:10px;text-align:center}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+    .hero{background:#0a3d62;color:#fff;padding:60px 20px;text-align:center}
+    .hero h1{font-size:36px}
+    .btn{background:#00a8ff;color:#fff;padding:12px 25px;border:none;border-radius:5px;cursor:pointer}
+    .section{padding:40px 20px;text-align:center}
+    .cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+    .card{background:#fff;padding:20px;width:260px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+    .form-box{background:#fff;padding:30px;max-width:500px;margin:0 auto;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+    input, select{width:100%;padding:10px;margin:10px 0;border-radius:5px;border:1px solid #ccc}
+    .contact{background:#1e5f8a;color:#fff;padding:30px;text-align:center}
+    footer{background:#0a3d62;color:#fff;text-align:center;padding:10px}
+    .whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:20px;text-decoration:none}
+  </style>
+  <!-- Google Analytics -->
+  <script async="" src="./Azul Empréstimos Caxias_files/fbevents.js.baixados"></script><script async="" src="./Azul Empréstimos Caxias_files/js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_AQUI');
+    fbq('track', 'PageView');
+  </script>
+
+</head>
+<body>
+
+<header>
+  <h1>Azul Empréstimos Caxias</h1>
+  <p>Crédito rápido, seguro e sem burocracia</p>
+</header>
+
+<nav>
+  <a href="file:///C:/Users/joaoa/OneDrive/Documentos/sitejoao.html#servicos">Serviços</a>
+  <a href="file:///C:/Users/joaoa/OneDrive/Documentos/sitejoao.html#simulacao">Simulação</a>
+  <a href="file:///C:/Users/joaoa/OneDrive/Documentos/sitejoao.html#contato">Contato</a>
+</nav>
+
+<section class="hero">
+  <h1>Libere seu crédito hoje mesmo</h1>
+  <p>Atendimento rápido pelo WhatsApp</p>
+  <a href="https://wa.me/5521983111655"><button class="btn">Falar no WhatsApp</button></a>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Empréstimo Consignado</h3>
+      <p>Para servidores públicos e CLT com aprovação rápida.</p>
+    </div>
+    <div class="card">
+      <h3>Consórcios</h3>
+      <p>Invista no seu futuro sem juros abusivos.</p>
+    </div>
+    <div class="card">
+      <h3>Financiamento de Veículos</h3>
+      <p>Conquiste seu carro com parcelas que cabem no bolso.</p>
+    </div>
+	<div class="card">
+      <h3>Crédito com garantia de imóvel</h3>
+      <p>Obtenha crédito com taxas reduzidas.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="simulacao" class="section">
+  <h2>Simule seu Crédito</h2>
+  <div class="form-box">
+    <form onsubmit="enviarWhats(event)">
+      <input type="text" id="nome" placeholder="Seu nome" required="">
+      <input type="tel" id="telefone" placeholder="Seu WhatsApp" required="">
+      <select id="servico">
+        <option>Empréstimo Consignado</option>
+        <option>Consórcio</option>
+	 <option>Crédito com garantia de imóvel</option>
+        <option>Financiamento de Veículo</option>
+      </select>
+      <input type="number" id="valor" placeholder="Valor desejado">
+      <button class="btn" type="submit">Simular Agora</button>
+    </form>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <h2>Fale Conosco</h2>
+  <p>WhatsApp: (21) 98311-1655</p>
+</section>
+
+<footer>
+  <p>© 2026 Azul Empréstimos Caxias</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5521983111655">💬</a>
+
+<script>
+function enviarWhats(event){
+  event.preventDefault();
+  let nome = document.getElementById('nome').value;
+  let tel = document.getElementById('telefone').value;
+  let servico = document.getElementById('servico').value;
+  let valor = document.getElementById('valor').value;
+
+  let mensagem = `Olá, meu nome é ${nome}%0AWhatsApp: ${tel}%0AServiço: ${servico}%0AValor: ${valor}`;
+  window.open(`https://wa.me/5521983111655?text=${mensagem}`, '_blank');
+}
+</script>
+
+
+
+</body></html>
